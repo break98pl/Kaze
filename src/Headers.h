@@ -464,6 +464,7 @@ typedef NS_ENUM(int, SBLockSource) {
 - (UIInterfaceOrientation)activeInterfaceOrientation;
 - (BOOL)isLocked;
 - (BOOL)isMenuDoubleTapAllowed;
+-(void)_simulateHomeButtonPress;
 @end
 
 typedef NS_ENUM(NSInteger, SBAppSwitcherStyle) {

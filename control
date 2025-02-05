@@ -1,6 +1,6 @@
 Package: me.qusic.kaze
 Name: Kaze
-Version: 1.0.1
+Version: 1.0.2
 Section: Tweaks
 Description: Quick Switcher and Hot Corners
 Depends: mobilesubstrate, preferenceloader, applist

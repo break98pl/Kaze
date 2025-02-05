@@ -21,7 +21,8 @@ export ADDITIONAL_OBJCFLAGS = -fobjc-arc -fvisibility=hidden
 export ADDITIONAL_LDFLAGS = -Flib
 export INSTALL_TARGET_PROCESSES = SpringBoard
 export FINALPACKAGE=1
-export THEOS_DEVICE_IP=192.168.2.4
+export THEOS_DEVICE_IP=127.0.0.1
+export THEOS_DEVICE_PORT=2222
 
 include $(THEOS)/makefiles/common.mk
 include $(THEOS_MAKE_PATH)/tweak.mk

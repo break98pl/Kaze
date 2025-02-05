@@ -37,7 +37,7 @@ static void gestureCancelled(void) {
 KazeGestureConditionBlock KazeLockScreenCondition = ^BOOL(KazeGestureRegion region) {
     return [KazePreferencesValue(kHotCornersEnabledKey()) boolValue]
         && ![KazePreferencesValue(kDisableLockGestureKey()) boolValue]
-        && region == ([KazePreferencesValue(kInvertHotCornersKey()) boolValue] ? KazeGestureRegionLeft : KazeGestureRegionRight)
+        && (region == KazeGestureRegionLeft || region == KazeGestureRegionRight)
         && !KazeDeviceLocked()
         && !KazeSwitcherShowing()
         && !KazeHasFrontmostApplication();

@@ -45,9 +45,9 @@ CHOptimizedMethod(1, self, void, SBControlCenterController, _handleShowControlCe
                 CGFloat x = position.x;
                 CGFloat width = size.width;
                 KazeGestureRegion region = KazeGestureRegionCenter;
-                if (x < width * 0.25) {
+                if (x < width * 0.15) {
                     region = KazeGestureRegionLeft;
-                } else if (x > width * 0.75) {
+                } else if (x > width * 0.85) {
                     region = KazeGestureRegionRight;
                 } else {
                     region = KazeGestureRegionCenter;
