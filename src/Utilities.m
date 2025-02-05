@@ -52,7 +52,7 @@ void KazeSwitcherLock(BOOL enabled) {
 void KazeSBAnimate(UIViewAnimationActionsBlock actions, UIViewAnimationCompletionBlock completion) {
     [StaticValue(BSUIAnimationFactory *, ({
         SBAppSwitcherSettings *settings = CHSharedInstance(SBPrototypeController).rootSettings.appSwitcherSettings;
-        [BSUIAnimationFactory factoryWithMass:settings.presentAnimationMass stiffness:settings.presentAnimationStiffness damping:settings.presentAnimationDamping];
+        [BSUIAnimationFactory factoryWithMass:settings.insertMass stiffness:settings.insertStiffness damping:settings.insertDamping];
     })) _animateWithAdditionalDelay:0 options:UIViewAnimationOptionBeginFromCurrentState actions:actions completion:completion];
 }
 

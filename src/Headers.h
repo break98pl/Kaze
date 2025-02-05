@@ -480,6 +480,9 @@ typedef NS_ENUM(NSInteger, SBAppSwitcherStyle) {
 @property(assign) CGFloat dismissAnimationStiffness;
 @property(assign) CGFloat dismissAnimationDamping;
 @property(assign) CGFloat dismissAnimationEpsilon;
+@property(assign) CGFloat insertMass;
+@property(assign) CGFloat insertStiffness;
+@property(assign) CGFloat insertDamping;
 @end
 
 @interface SBRootSettings : _UISettings
